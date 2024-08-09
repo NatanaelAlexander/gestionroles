@@ -1,7 +1,3 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-## Getting Started
-
 First, run the development server:
 
 ```bash
@@ -16,21 +12,31 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Descripción: 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+La app comenzó como una herramienta para la gestión de roles, pero ha evolucionado para incluir la gestión de inventario. Todos los usuarios tendrán un rol específico que determinará su acceso a diferentes funcionalidades dentro de la aplicación.
 
-## Learn More
+Roles de usuario:
 
-To learn more about Next.js, take a look at the following resources:
+Administrador: Tiene acceso completo a todas las funcionalidades de la app, incluyendo la gestión de usuarios y productos.
+Visita: Puede ver los productos disponibles en el inventario y editar su información personal, como su perfil y contraseña.
+Bodeguero: Tiene acceso a todas las funcionalidades relacionadas con la gestión de productos, incluyendo la creación, edición y eliminación de productos. También puede editar su información personal.
+Funcionalidades de la app:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Login: Sistema de autenticación para permitir a los usuarios acceder a la app según su rol.
+Gestión de usuarios:
+Crear un nuevo usuario.
+Editar un usuario.
+Eliminar un usuario.
+Cambiar contraseña.
+Listar usuarios.
+Listar usuarios por rol.
+Listar usuarios por estado.
+Gestión de inventario:
+Crear un nuevo producto.
+Editar un producto existente.
+Eliminar un producto.
+Listar productos disponibles en el inventario.
+Seguridad: Implementación de validaciones y permisos basados en roles para asegurar que cada usuario acceda solo a las funcionalidades correspondientes a su rol.
+Notificaciones: Sistema para alertar a los usuarios sobre cambios importantes, como la creación de nuevos usuarios, eliminación de usuarios o modificaciones en el inventario.
+Optimización y Búsqueda: Funcionalidades avanzadas para filtrar y buscar usuarios y productos dentro de la app.
