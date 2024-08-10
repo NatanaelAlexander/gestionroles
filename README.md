@@ -18,9 +18,10 @@ La app comenzó como una herramienta para la gestión de roles, pero ha evolucio
 
 Roles de usuario:
 
-Administrador: Tiene acceso completo a todas las funcionalidades de la app, incluyendo la gestión de usuarios y productos.
-Visita: Puede ver los productos disponibles en el inventario y editar su información personal, como su perfil y contraseña.
-Bodeguero: Tiene acceso a todas las funcionalidades relacionadas con la gestión de productos, incluyendo la creación, edición y eliminación de productos. También puede editar su información personal.
+-Administrador: Tiene acceso completo a todas las funcionalidades de la app, incluyendo la gestión de usuarios y productos.
+-Visita: Puede ver los productos disponibles en el inventario y editar su información personal, como su perfil y contraseña.
+-Bodeguero: Tiene acceso a todas las funcionalidades relacionadas con la gestión de productos, incluyendo la creación, edición y eliminación de productos. También puede editar su información personal.
+
 Funcionalidades de la app:
 
 Login: Sistema de autenticación para permitir a los usuarios acceder a la app según su rol.

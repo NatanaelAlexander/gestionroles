@@ -20,7 +20,9 @@ export default function MainLogin() {
                         <input className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50" type="text" placeholder="ingrese su contraseña" />
                     </div>
                     <div className="flex items-center pt-6">
-                        <button className="bg-gray-700 hover:bg-gray-600 text-white whitespace-nowrap rounded-md text-sm font-medium h-10 px-4 py-2 w-full">Iniciar sesión</button>
+                        {/* Despues cambiarlo a un btn */}
+                        <a className="bg-gray-700 text-center hover:bg-gray-600 text-white whitespace-nowrap rounded-md text-sm font-medium h-10 px-4 py-2 w-full" href={'/menu-principal'}>Iniciar sesión</a>
+
                     </div>
                 </div>
             </form>

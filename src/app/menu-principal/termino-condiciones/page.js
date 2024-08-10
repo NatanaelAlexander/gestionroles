@@ -4,7 +4,7 @@ export default function page() {
     return (
         <>
             <div className="w-full">
-                <Tittle tittle={"Dashboard"} />
+                <Tittle tittle={"Terminós y condiciones"} />
             </div>
         </>
     )
