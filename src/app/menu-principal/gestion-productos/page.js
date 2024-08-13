@@ -4,7 +4,7 @@ export default function page() {
     return (
         <>
             <div className="w-full">
-                <Tittle tittle={"Gestión de inventario"} />
+                <Tittle tittle={"Gestión de productos"} />
             </div>
         </>
     )

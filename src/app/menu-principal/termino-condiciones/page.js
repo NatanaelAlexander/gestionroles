@@ -4,7 +4,7 @@ export default function page() {
     return (
         <>
             <div className="w-full">
-                <Tittle tittle={"Terminós y condiciones"} />
+                <Tittle tittle={"Términos y condiciones"} />
             </div>
         </>
     )
