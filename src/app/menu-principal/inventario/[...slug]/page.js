@@ -1,6 +1,7 @@
 import Tittle from "@/components/menu-principal/Tittle"
 import Buscador from "@/components/menu-principal/inventario/productos/Buscador"
 import ListarProductos from "@/components/menu-principal/inventario/productos/ListarProductos"
+export const runtime = 'edge';
 
 export default function page({ params }) {
     return (
