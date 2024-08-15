@@ -2,6 +2,7 @@ import categorias from "./categorias"
 import { FiEdit } from "react-icons/fi";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { CiBoxes } from "react-icons/ci";
+import Link from "next/link";
 
 export default function MostrarCategorias() {
     return (
@@ -11,14 +12,14 @@ export default function MostrarCategorias() {
             {categorias.map((categoria) => (
                 <div key={categoria.id} className="border rounded-md p-5 flex flex-col gap-5">
                     <div className="flex flex-row justify-between items-center">
-                        <h4 className="font-semibold text-lg cursor-pointer">{categoria.nombre}</h4>
+                        <Link href={`/menu-principal/inventario/${categoria.id}/${categoria.nombre}`} className="font-semibold text-lg cursor-pointer">{categoria.nombre}</Link>
                         <figure className="flex flex-row gap-5">
-                            <FiEdit className="size-5 cursor-pointer hover:scale-105 transition" />
-                            <RiDeleteBin6Line className="size-5 cursor-pointer hover:scale-105 transition" />
+                        <FiEdit className="size-5 cursor-pointer hover:scale-105 transition hover:text-blue-500" />
+                        <RiDeleteBin6Line className="size-5 cursor-pointer hover:scale-105 hover:text-red-500 transition" />
                         </figure>
                     </div>
                     <div className="flex flex-col gap-2">
-                        <p className="text-gray-400 text-sm line-clamp-2">{categoria.descripción}</p>
+                        <p className="text-gray-400 text-sm line-clamp-1">{categoria.descripción}</p>
                         <span className="flex flex-row gap-1 items-center justify-end">
                             <CiBoxes></CiBoxes>
                             <p className="text-sm ">{categoria.productos} productos</p>

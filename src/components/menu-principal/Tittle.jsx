@@ -1,4 +1,4 @@
-export default function Tittle({tittle}) {
+export default function Tittle({ tittle }) {
     return (
         <section className="">
             <header className="border-b">
