@@ -39,7 +39,7 @@ const categorias = [
         id: 7,
         nombre: 'Routers',
         descripción: 'Routers para redes domésticas y empresariales, que ofrecen soluciones de conectividad robustas y confiables, desde modelos básicos para hogares hasta routers avanzados para ambientes empresariales con múltiples funciones y capacidades de gestión de red.',
-        productos: 1
+        productos: 6
     },
 ];
 

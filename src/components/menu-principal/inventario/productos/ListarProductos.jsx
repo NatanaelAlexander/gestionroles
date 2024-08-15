@@ -3,14 +3,14 @@ import productos from "./productos";
 import { useEffect, useState } from "react";
 import { FiEdit } from "react-icons/fi";
 import { RiDeleteBin6Line } from "react-icons/ri";
-import { FaSortUp, FaSortDown } from "react-icons/fa"; // Iconos para flechas
+import { FaSortUp, FaSortDown } from "react-icons/fa";
 
 export default function ListarProductos({ params }) {
     const [productosFiltrados, setproductosFiltrados] = useState([]);
     const [id, categoria] = params.slug;
     const [filtroStock, setFiltroStock] = useState("");
     const [filtroEstado, setFiltroEstado] = useState("");
-    const [ordenAscendente, setOrdenAscendente] = useState(true); // Estado para manejar la ordenación
+    const [ordenAscendente, setOrdenAscendente] = useState(true);
 
     useEffect(() => {
         let filtrado = productos.filter((producto) =>
@@ -57,11 +57,11 @@ export default function ListarProductos({ params }) {
             </div>
             <table className="w-full table-auto bg-white shadow-md rounded-lg overflow-hidden">
                 <thead className="bg-gray-200">
-                    <tr>
+                    <tr className="">
                         <th className="px-4 py-2 text-left">Nombre</th>
                         <th className="px-4 py-2 text-left">Descripción</th>
                         <th
-                            className="px-4 py-2 text-left cursor-pointer flex items-center"
+                            className="px-4 py-2 text-left cursor-pointer flex items-center mx-auto"
                             onClick={manejarOrden}
                         >
                             Stock
@@ -71,6 +71,9 @@ export default function ListarProductos({ params }) {
                                 <FaSortDown className="ml-1" />
                             )}
                         </th>
+                        <th className="px-4 py-2 text-left">
+                            Precio c/u
+                        </th>
                         <th className="px-4 py-2 text-left">Estado</th>
                         <th className="px-4 py-2 text-left"></th>
                     </tr>
@@ -79,8 +82,9 @@ export default function ListarProductos({ params }) {
                     {productosFiltrados.map((producto) => (
                         <tr key={producto.nombre} className="hover:bg-gray-100">
                             <td className="border-t px-4 py-[10px] cursor-pointer">{producto.nombre}</td>
-                            <td className="border-t px-4 py-[10px] truncate max-w-xs">{producto.descripcion}</td>
+                            <td className="border-t px-4 py-[10px] truncate max-w-lg">{producto.descripcion}</td>
                             <td className="border-t px-4 py-[10px]">{producto.stock}</td>
+                            <td className="border-t px-4 py-[10px] capitalize">{producto.precio}</td>
                             <td className="border-t px-4 py-[10px] capitalize">{producto.status}</td>
                             <td className="border-t px-4 py-[10px] flex flex-row gap-5 justify-end">
                                 <FiEdit className="size-5 cursor-pointer hover:scale-105 transition hover:text-blue-500" />

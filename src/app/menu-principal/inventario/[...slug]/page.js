@@ -11,7 +11,7 @@ export default function page({ params }) {
 
                 <div className="container mx-auto p-10">
                     <Buscador />
-
+                    
                     <ListarProductos params={params} />
                 </div>
             </div>
