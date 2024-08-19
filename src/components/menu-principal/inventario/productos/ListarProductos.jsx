@@ -87,8 +87,8 @@ export default function ListarProductos({ params }) {
                             <td className="border-t px-4 py-[10px] capitalize">{producto.precio}</td>
                             <td className="border-t px-4 py-[10px] capitalize">{producto.status}</td>
                             <td className="border-t px-4 py-[10px] flex flex-row gap-5 justify-end">
-                                <FiEdit className="size-5 cursor-pointer hover:scale-105 transition hover:text-blue-500" />
-                                <RiDeleteBin6Line className="size-5 cursor-pointer hover:scale-105 hover:text-red-500 transition" />
+                                <FiEdit title="Editar usuario" className="size-5 cursor-pointer hover:scale-105 transition hover:text-blue-500" />
+                                <RiDeleteBin6Line title="ELiminar usuario" className="size-5 cursor-pointer hover:scale-105 hover:text-red-500 transition" />
                             </td>
                         </tr>
                     ))}
