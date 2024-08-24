@@ -7,15 +7,14 @@ import Link from "next/link";
 export default function MostrarCategorias() {
     return (
 
-
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 py-10">
             {categorias.map((categoria) => (
                 <div key={categoria.id} className="border rounded-md p-5 flex flex-col gap-5">
                     <div className="flex flex-row justify-between items-center">
                         <Link href={`/menu-principal/inventario/${categoria.id}/${categoria.nombre}`} className="font-semibold text-lg cursor-pointer">{categoria.nombre}</Link>
                         <figure className="flex flex-row gap-5">
-                        <FiEdit title="Editar categoria" className="size-5 cursor-pointer hover:scale-105 transition hover:text-blue-500" />
-                        <RiDeleteBin6Line title="ELiminar categoria" className="size-5 cursor-pointer hover:scale-105 hover:text-red-500 transition" />
+                            <FiEdit title="Editar categoria" className="size-5 cursor-pointer hover:scale-105 transition hover:text-blue-500" />
+                            <RiDeleteBin6Line title="ELiminar categoria" className="size-5 cursor-pointer hover:scale-105 hover:text-red-500 transition" />
                         </figure>
                     </div>
                     <div className="flex flex-col gap-2">

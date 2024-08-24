@@ -1,4 +1,6 @@
 import { FaUserCircle } from "react-icons/fa";
+import { FiEdit } from "react-icons/fi";
+
 export default function Perfil() {
     return (
         <>
@@ -6,9 +8,13 @@ export default function Perfil() {
                 <div className="flex flex-col items-center gap-5">
                     <FaUserCircle className="size-44" />
                     <p className="font-semibold text-2xl">Perfil de Natanael</p>
+                    
                 </div>
                 <div className="p-10 border rounded-md flex flex-col gap-5">
-                    <p className="text-lg font-medium">Datos personales</p>
+                    <div className="flex flex-row justify-between items-center">
+                        <p className="text-lg font-medium">Datos personales</p>
+                        <FiEdit title="Editar datos" className="size-5 cursor-pointer hover:scale-105 transition hover:text-blue-500" />
+                    </div>
                     <div className="flex flex-row gap-5">
                         <div className="flex flex-col gap-1">
                             <label className="text-base">Nombre</label>
