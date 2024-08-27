@@ -26,8 +26,6 @@ export default function Aside() {
                 </div>
 
                 <div className="flex flex-col gap-[1px]">
-
-
                     <Link href={'/menu-principal/historial'} className="flex flex-row items-center text-nowrap py-2 cursor-pointer px-4 rounded-md hover:bg-gray-100"><RiFileListLine className="size-5 mr-2" />Historial</Link>
                     <Link href={'/menu-principal'} className="flex flex-row items-center text-nowrap py-2 cursor-pointer px-4 rounded-md hover:bg-gray-100"><RxDashboard className="size-5 mr-2" />Dashboard</Link>
                     <Link href={'/menu-principal/gestion-usuario'} className="flex flex-row items-center text-nowrap py-2 cursor-pointer px-4 rounded-md hover:bg-gray-100"><FiUsers className="size-5 mr-2" />Gestión de usuarios</Link>
